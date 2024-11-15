@@ -1,0 +1,291 @@
+/* Estilo básico para todas las secciones */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Estilo para el encabezado */
+.site-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha */
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  flex-direction: row; /* Los elementos están en una fila por defecto */
+  align-items: center;
+  width: 100%;
+  justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha en pantallas grandes */
+  
+}
+
+/* Estilo para la lista de navegación */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between; /* Distribuye los items de forma equitativa */
+  flex-grow: 0.5; /* Permite que la lista de menús ocupe todo el espacio disponible */
+}
+
+/* Items del menú */
+.menu-item {
+  margin-left: 20px; /* Separación entre los items del menú */
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.menu-link:hover {
+  color: #6a11cb; /* Color al pasar el ratón */
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+  margin-right: auto; /* Esto asegura que el logo se quede a la izquierda */
+}
+
+.logo-image {
+  max-width: 100%;
+  height: auto;
+  width: 150px; /* Tamaño ajustado para el logo */
+  
+}
+
+/* Estilo para la sección home */
+.home-content {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  align-items: center; /* Alineamos verticalmente los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  padding: 20px; /* Espaciado opcional */
+  max-width: 1200px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilo para la imagen */
+.home-image-img {
+  width: 500px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin: auto;
+  
+}
+
+/* Estilo para la parte del texto */
+.home-text {
+  display: flex;
+  flex-direction: column; /* Hace que el título y el párrafo se apilen verticalmente */
+  margin-left: 20px; /* Espaciado entre la imagen y el texto */
+  max-width: 700px; /* Limita el ancho del texto */
+  text-align: center;
+}
+
+/* Estilos adicionales para los textos */
+.home-title {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Sección de productos con Flexbox */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: calc(33.333% - 20px); /* Tres columnas */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto hover */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más grande al pasar el mouse */
+}
+
+/* Imagen del producto */
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer; /* Cambia el cursor a mano cuando el mouse pasa sobre la imagen */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.product-image:hover {
+  transform: scale(1.05); /* Agranda la imagen al pasar el mouse */
+}
+
+/* Nombre y precio del producto */
+.product-name,
+.product-price {
+  text-align: center;
+}
+
+
+/* Estilo para las reseñas con Grid */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-author {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* Estilo para el formulario de contacto */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-input {
+  height: 40px;
+}
+
+.form-textarea {
+  height: 150px;
+}
+
+.btn {
+  background-color: #6a11cb;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2575fc;
+}
+
+
+/* Media Query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Cambia la dirección a columna: logo arriba y menú abajo */
+    justify-content: center; /* Centra todo el contenido */
+    align-items: center; /* Centra el logo y los links */
+    padding: 20px 0; /* Espaciado vertical */
+  }
+
+  .menu {
+    flex-direction: column; /* Apila los items del menú verticalmente */
+    align-items: center; /* Centra los items del menú */
+    margin-top: 20px; /* Espaciado entre el logo y el menú */
+  }
+
+  .menu-item {
+    margin: 10px 0; /* Separación entre los items del menú */
+  }
+
+  .logo-image {
+    width: 120px; /* Ajusta el tamaño del logo si es necesario */
+  }
+
+  .products-container {
+    flex-direction: column;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image {
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

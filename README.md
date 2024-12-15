@@ -25,18 +25,32 @@ En este sitio web podrás encontrar:
 - **Flexbox & Grid**: Para un diseño flexible y ordenado.
 - **JavaScript** (si es necesario): Para interactividad adicional.
 
-## Cómo Contribuir
-
-Si deseas colaborar con el proyecto, puedes hacerlo de la siguiente manera:
-
-1. Haz un fork de este repositorio.
-2. Crea una rama para tu característica o corrección.
-3. Realiza tus cambios y haz un pull request.
-
-## Contacto
-
-Si tienes alguna pregunta o sugerencia, no dudes en contactarnos. ¡Nos encanta escuchar a nuestros clientes y mejorar constantemente!
-
----
 
 **Galgo** - Porque tu galgo merece lo mejor.
+
+
+## Actualizacion 15/12/2024
+
+Actualización del Navbar con Bootstrap:
+
+Se implementó el uso de Bootstrap para mejorar y actualizar el diseño del menú de navegación.
+Se añadió un efecto hover en cada enlace del menú mediante CSS.
+Se incorporó un ícono de carrito de compras.
+Se cambió el fondo del sitio de color negro a gris claro para mejorar la visibilidad y la estética.
+Archivo script.js creado y vinculado:
+
+Se notificó "Conexión establecida" al cargar el archivo correctamente.
+Se creó una función para verificar si todos los campos del formulario de contacto están completos, mostrando los siguientes mensajes según corresponda:
+"Todos los campos están completos"
+"Faltan campos por completar"
+"Por favor, completa todos los campos"
+Funciones adicionales:
+
+Se creó una función con un array de productos, los cuales se visualizan dinámicamente en una plantilla HTML.
+Se utilizó fetch para acceder a la lista de productos en formato JSON.
+Carrito de compras:
+
+Se creó un carrito utilizando localStorage para almacenar la información del carrito de compras.
+El carrito muestra la cantidad, el precio y el total de los productos.
+Al finalizar la compra, se muestra un mensaje de agradecimiento.
+

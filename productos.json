@@ -1,0 +1,12 @@
+[
+    { "id": 1111, "name": "Collar Azul", "price": 75.00, "description": "Collar adulto azul" },
+    { "id": 1112, "name": "Collar Verde", "price": 70.00, "description": "Collar adulto verde" },
+    { "id": 1113, "name": "Collar Negro", "price": 60.00, "description": "Collar cachorro negro" },
+    { "id": 1114, "name": "Comida Orgánica", "price": 30.00, "description": "Comida Orgánica Mordida Grande" },
+    { "id": 1115, "name": "Comida Orgánica", "price": 30.00, "description": "Comida Orgánica Mordida Mediana" },
+    { "id": 1116, "name": "Ropa de Lluvia Amarilla", "price": 40.00, "description": "Ropa de lluvia para Galgos con mucha onda" },
+    { "id": 1117, "name": "Ropa de Lluvia Roja", "price": 45.00, "description": "Ropa de lluvia para Galgos con estilo" },
+    { "id": 1, "name": "Comida Orgánica para Galgo", "description": "Comida saludable para tu galgo.", "price": 15 },
+    { "id": 2, "name": "Collar para Galgo", "description": "Collar de cuero resistente.", "price": 10 },
+    { "id": 3, "name": "Ropa de Lluvia para Galgo", "description": "Mantén a tu galgo seco con esta ropa.", "price": 20 }
+]

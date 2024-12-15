@@ -24,97 +24,39 @@ body {
   color: #555;
 }
 
-/* Estilo para el encabezado */
-.site-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha */
-  align-items: center;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
-}
 
-/* Barra de navegación */
-.navbar {
-  display: flex;
-  flex-direction: row; /* Los elementos están en una fila por defecto */
-  align-items: center;
-  width: 100%;
-  justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha en pantallas grandes */
-  
-}
 
-/* Estilo para la lista de navegación */
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between; /* Distribuye los items de forma equitativa */
-  flex-grow: 0.5; /* Permite que la lista de menús ocupe todo el espacio disponible */
-}
-
-/* Items del menú */
-.menu-item {
-  margin-left: 20px; /* Separación entre los items del menú */
-}
-
-.menu-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.menu-link:hover {
-  color: #6a11cb; /* Color al pasar el ratón */
-}
-
-/* Estilo para la imagen del logo */
-.logo {
-  margin-right: auto; /* Esto asegura que el logo se quede a la izquierda */
-}
-
-.logo-image {
-  max-width: 100%;
-  height: auto;
-  width: 150px; /* Tamaño ajustado para el logo */
-  
-}
 
 /* Estilo para la sección home */
 .home-content {
-  display: flex; /* Usamos flexbox para alinear los elementos */
-  align-items: center; /* Alineamos verticalmente los elementos */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  padding: 20px; /* Espaciado opcional */
-  max-width: 1200px; /* Limita el ancho máximo */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Estilo para la imagen */
 .home-image-img {
-  width: 500px; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 500px;
   height: auto;
   margin: auto;
-  
 }
 
 /* Estilo para la parte del texto */
 .home-text {
   display: flex;
-  flex-direction: column; /* Hace que el título y el párrafo se apilen verticalmente */
-  margin-left: 20px; /* Espaciado entre la imagen y el texto */
-  max-width: 700px; /* Limita el ancho del texto */
+  flex-direction: column;
+  margin-left: 20px;
+  max-width: 700px;
   text-align: center;
 }
 
-/* Estilos adicionales para los textos */
 .home-title {
   font-size: 6rem;
   font-weight: bold;
   margin: 0;
-  text-align: center;
 }
 
 .home-subtitle {
@@ -122,7 +64,7 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Sección de productos con Flexbox */
+/* Estilos para productos */
 .products-container {
   display: flex;
   flex-wrap: wrap;
@@ -134,37 +76,34 @@ body {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   padding: 1rem;
-  width: calc(33.333% - 20px); /* Tres columnas */
+  width: calc(33.333% - 20px);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el efecto hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-5px); /* Mueve la tarjeta hacia arriba */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más grande al pasar el mouse */
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Imagen del producto */
 .product-image {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  cursor: pointer; /* Cambia el cursor a mano cuando el mouse pasa sobre la imagen */
-  transition: transform 0.3s ease; /* Transición suave */
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .product-image:hover {
-  transform: scale(1.05); /* Agranda la imagen al pasar el mouse */
+  transform: scale(1.05);
 }
 
-/* Nombre y precio del producto */
 .product-name,
 .product-price {
   text-align: center;
 }
 
-
-/* Estilo para las reseñas con Grid */
+/* Estilo para las reseñas */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -223,69 +162,239 @@ body {
 }
 
 .btn {
-  background-color: #6a11cb;
+  background-color: #212022; /* Elimina el color azul predeterminado */
   color: white;
   padding: 1rem;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #2575fc;
+  background-color: #3aff33; /* Nuevo color de hover, evita azul */
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  padding: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: black; /* Cambiar el color a negro en el hover */
+  transform: translateY(-2px); /* Movimiento sutil hacia arriba */
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Evitar hover en el logo */
+#logo:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Evitar hover en la palabra 'Galgos' */
+.galgos:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Superposición y cuadro emergente */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.product-description-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-description-popup.active {
+  display: block;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.product-description-popup button {
+  background-color: #494949; 
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-description-popup button:hover {
+  background-color: #33ff66; /* Nuevo color de hover, evita azul */
+}
+
+/* Estilo para el botón de cerrar (X) */
+.close-btn {
+  position: absolute;
+  top: 10px; /* Ajuste para centrar mejor */
+  right: 10px; /* Ajuste para centrado */
+  background-color: transparent;
+  border: none;
+  font-size: 2rem; /* Tamaño grande para la X */
+  color: white; /* Color blanco para contraste */
+  cursor: pointer;
+  z-index: 1001; /* Asegura que el botón esté por encima de otros elementos */
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn:hover {
+  color: #00ff0d; /* Cambio de color en hover para indicar que es interactivo */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1001;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup-content {
+  position: relative;
+  z-index: 9999;
+  /* Otros estilos como padding, border, etc. */
 }
 
 
-/* Media Query para pantallas pequeñas (menos de 768px) */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.close-btn {
+  cursor: pointer;
+  float: right;
+  font-size: 1.5rem;
+}
+
+.scrollable-container {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #494949;
+  color: white;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #28a745;
+  color: white;
+}
+
+
+/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Cambia la dirección a columna: logo arriba y menú abajo */
-    justify-content: center; /* Centra todo el contenido */
-    align-items: center; /* Centra el logo y los links */
-    padding: 20px 0; /* Espaciado vertical */
-  }
-
-  .menu {
-    flex-direction: column; /* Apila los items del menú verticalmente */
-    align-items: center; /* Centra los items del menú */
-    margin-top: 20px; /* Espaciado entre el logo y el menú */
-  }
-
-  .menu-item {
-    margin: 10px 0; /* Separación entre los items del menú */
-  }
-
-  .logo-image {
-    width: 120px; /* Ajusta el tamaño del logo si es necesario */
-  }
-
-  .products-container {
-    flex-direction: column;
-  }
-
   .product-card {
     width: 100%;
   }
 
-  .reviews-grid {
-    grid-template-columns: 1fr;
+  .product-description-popup {
+    width: 90%;
+    max-width: 100%;
+    padding: 1rem;
   }
 
-  .home-content {
-    flex-direction: column;
-    text-align: center;
+  .overlay {
+    background: rgba(0, 0, 0, 0.8);
   }
 
-  .home-image {
-    margin-bottom: 2rem;
-  }
-
-  .form {
-    padding: 1.5rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
+  .close-btn {
+    font-size: 1.8rem; /* Reducir el tamaño de la X en pantallas pequeñas */
+    top: 10px;
+    right: 10px;
   }
 }
